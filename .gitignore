@@ -1,0 +1,23 @@
+.DS_Store
+
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Environment files
+.env
+.env.*
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+
+# Local database and runtime artifacts
+backend/data.db
+*.sqlite
+*.sqlite3
+
+# Logs
+*.log
