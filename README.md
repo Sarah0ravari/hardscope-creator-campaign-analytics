@@ -118,6 +118,8 @@ python3 refresh_channels.py
 
 That script is designed so it can be scheduled with `cron`, GitHub Actions, or any task runner.
 
+This repo also includes a GitHub Actions workflow at `.github/workflows/refresh.yml` that can refresh creator data every 6 hours or be triggered manually with `workflow_dispatch`. It expects a repository secret named `YT_API_KEY`.
+
 ### 3. Frontend
 
 ```bash

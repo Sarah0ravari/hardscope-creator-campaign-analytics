@@ -1,0 +1,31 @@
+name: Refresh creator data
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        working-directory: backend
+        run: pip install -r requirements.txt
+
+      - name: Run refresh
+        working-directory: backend
+        env:
+          YT_API_KEY: ${{ secrets.YT_API_KEY }}
+          YT_CHANNEL_IDS: UCbfYPyITQ-7l4upoX8nvctg,UC8butISFwT-Wl7EV0hUK0BQ,UC_x5XG1OV2P6uZZ5FSM9Ttw,UCVHFbqXqoYvEWM1Ddxl0QDg
+          YT_CAMPAIGN_LABEL: AI_Launch
+          YT_MAX_RESULTS: "15"
+        run: python3 refresh_channels.py
