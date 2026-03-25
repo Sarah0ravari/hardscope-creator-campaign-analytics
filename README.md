@@ -10,6 +10,16 @@ A lightweight creator campaign analytics application built for brand partnership
 - A small recurring refresh script for scheduled ingestion
 - Automated backend tests for schema creation, ingestion, and analytics behavior
 
+## Dashboard preview
+
+### Full dashboard
+
+![Full dashboard](./docs/dashboard-full.png)
+
+### Analytics section
+
+![Analytics section](./docs/dashboard-analytics.png)
+
 ## Live verification
 
 I verified the ingest flow locally on March 24, 2026 with a real YouTube Data API key.
