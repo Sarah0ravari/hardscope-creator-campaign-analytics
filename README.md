@@ -86,10 +86,10 @@ Repeat that for any additional YouTube channel IDs you want to compare.
 
 Recommended demo set for a polished dashboard:
 
-- `UC_x5XG1OV2P6uZZ5FSM9Ttw` — Google for Developers
-- `UCBJycsmduvYEL83R_U4JriQ` — Marques Brownlee
-- `UCsBjURrPoezykLs9EqgamOA` — Linus Tech Tips
+- `UCbfYPyITQ-7l4upoX8nvctg` — Two Minute Papers
 - `UC8butISFwT-Wl7EV0hUK0BQ` — freeCodeCamp.org
+- `UC_x5XG1OV2P6uZZ5FSM9Ttw` — Google for Developers
+- `UCVHFbqXqoYvEWM1Ddxl0QDg` — Android Developers
 
 Why this set:
 
@@ -102,15 +102,15 @@ Example batch:
 ```bash
 curl -X POST http://localhost:8000/ingest \
   -H "Content-Type: application/json" \
-  -d '{"platform":"youtube","channel_id":"UCBJycsmduvYEL83R_U4JriQ","campaign_label":"AI Launch","max_results":15}'
-
-curl -X POST http://localhost:8000/ingest \
-  -H "Content-Type: application/json" \
-  -d '{"platform":"youtube","channel_id":"UCsBjURrPoezykLs9EqgamOA","campaign_label":"AI Launch","max_results":15}'
+  -d '{"platform":"youtube","channel_id":"UCbfYPyITQ-7l4upoX8nvctg","campaign_label":"AI Launch","max_results":15}'
 
 curl -X POST http://localhost:8000/ingest \
   -H "Content-Type: application/json" \
   -d '{"platform":"youtube","channel_id":"UC8butISFwT-Wl7EV0hUK0BQ","campaign_label":"AI Launch","max_results":15}'
+
+curl -X POST http://localhost:8000/ingest \
+  -H "Content-Type: application/json" \
+  -d '{"platform":"youtube","channel_id":"UCVHFbqXqoYvEWM1Ddxl0QDg","campaign_label":"AI Launch","max_results":15}'
 ```
 
 Optional recurring refresh script:
