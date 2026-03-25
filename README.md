@@ -24,14 +24,21 @@ A lightweight creator campaign analytics application built for brand partnership
 
 I verified the ingest flow locally on March 24, 2026 with a real YouTube Data API key.
 
-Confirmed live ingest:
+Confirmed live dataset in the local dashboard:
 
-- Creator: `Google for Developers`
-- Channel ID: `UC_x5XG1OV2P6uZZ5FSM9Ttw`
-- Videos fetched: `3`
-- Total views stored: `12,395`
-- Aggregate engagement rate from stored rows: `2.98%`
-- Latest publish date in the local DB: `2026-03-23T13:01:31Z`
+- Creators tracked: `4`
+- Campaign label: `AI Launch`
+- Total views stored: `1,967,503`
+- Average engagement rate shown in the dashboard: `3.82%`
+- Watchlist creators flagged: `2`
+- Top creator by total reach: `Two Minute Papers` with `1,620,036` views and `5.21%` engagement
+
+Creators verified in the local dataset:
+
+- `Two Minute Papers` — `15` videos, `1,620,036` total views
+- `freeCodeCamp.org` — `8` videos, `328,632` total views
+- `Google for Developers` — `3` videos, `12,395` total views
+- `Android Developers` — `2` videos, `6,440` total views
 
 ## Why this source
 
